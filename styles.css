@@ -17,28 +17,31 @@
 }  
 
 .header-biside {
-    min-height: 80vh;
+    min-height: 100vh;
     width: 100%;
     background-image: url(img/ommigbanner.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
+    background-position-y: bottom;
 }  
 .header-triside{
-    min-height: 90vh;
+    min-height: 100vh;
     width: 100%;
     background-image: url(img/portfoliebanner1.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
+    
 }  
 .header-quaside{
-    min-height: 90vh;
+    min-height: 100vh;
     width: 100%;
     background-image: url(img/kontaktbanner.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
+    background-position-y: bottom;
 }
 h1 {
     position: relative;
@@ -529,16 +532,121 @@ footer{
     grid-column: auto;
 }
 /*------kontakt-mig-side------*/
-.kontakt-container {
+
+.kontakt-container{
     display: flex;
-    margin-right: auto;
-    background-color: rgb(14, 14, 14);
+    padding: 30px 120px;
+    margin-left: 110px;
+}
+.kontakt-info p{
+    color: #3BB273;
+}
+.kontakt-tekst{
+
+    text-align: left;
+    padding-top: 30px;
+    justify-content: center; 
+    margin-right: 20px;
+    padding-top: 95px;
+    padding-left: 90px;
+    grid-column: auto;
+}
+.kontakt-info p{
+    color: #3BB273;
+}
+.kontakt-formular{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    background-color: #000000;
     
 }
-.kontakt-container2 {
-    width: 600px;
-    height: 400px;
-    margin-left: auto;
-    background-color: rgb(14, 14, 14);
-     
- }
+
+.kontakt-formular h1{
+    padding-bottom: 15px;
+    margin-left: 225px;
+}
+.form{
+    width: 90%;
+    max-width: 600px;
+
+}
+.input-group{
+    margin-bottom: 30px;
+    position: relative;
+    
+}
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid white;
+    background: transparent;
+    font-size: 15px;
+    color: #fff;
+}
+label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: white;
+    cursor: text;
+    transition: 0.2s;
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+    top: -35px;
+    font-size: 14px;
+    
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+.row .input-group{
+    flex-basis: 40%;
+}
+@media(max-width: 700px){
+    .kontakt-container{
+        flex-direction: column;
+    }
+    .kontakt-formular {
+        justify-content: center;
+    }
+    .kontakt-formular h1{
+        padding-left: 2px;
+        margin-left: -60px;
+    }
+    .row{
+        margin-right: 0px;
+        padding-right: 150px;
+    }
+    .input-group{
+        width: 200px;
+    }
+    .kontakt-tekst{
+        width: 230px;
+        justify-content: left;
+        padding-left: 0px;
+        justify-self: left;
+        position: relative;
+        left: -110px;
+
+       
+
+    }
+    .kompetancer{
+        font-size: 12px;
+    }
+    .kompetancer h1{
+        font-size: 15px;
+    }
+}
