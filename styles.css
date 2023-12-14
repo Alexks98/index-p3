@@ -474,17 +474,27 @@ textarea:valid~label{
 }  
 @media(max-width: 700px){
 
-    
-    .send-knap{
-        font-size: 12px;
-        padding: 6px 16px;
-        margin-left: 195px;
+    .contacts {
+        justify-content: center;
+        padding-left: 100px
     }
-
+    .contacts h1{
+        padding-left: 2px;
+        margin-left: -60px;
+        font-size: 20px;
+    }
+    .row{
+        margin-right: 0px;
+        padding-right: 150px;
+    }
     .input-group{
-        margin-left: 120px;
+        width: 200px;
+        margin-left: 12px;
     }
-
+    .send-knap{
+        margin-left: 12px;
+        font-size: 14px;
+    }
 }
 /*------footer------*/
 
@@ -715,5 +725,6 @@ textarea:valid~label{
     }
     .send-knap{
         margin-left: 12px;
+        font-size: 15px;
     }
 }
