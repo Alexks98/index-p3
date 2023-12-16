@@ -48,6 +48,10 @@ h1 {
     display: inline-block;  
     padding-top: 1%;
     padding-bottom: 1%;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+
 }
   
 h1::after {
@@ -70,7 +74,7 @@ p{
 }   
 nav{
     display: flex;
-    padding: 0% 0% 6% 0%;
+    padding: 0 0 6% 0;
     justify-content: space-between;
     align-items: center;
 }
@@ -91,7 +95,7 @@ nav{
 }
 .nav-links ul li ::after{
     content:"";
-    width: 0%;
+    width: 0;
     height: 2px;
     background: #ff3881;
     display: block;
@@ -111,9 +115,7 @@ nav{
     transform: translate(-50%,-50%);
     text-align: center;
 }
-.text-box h1{
-    font-size: 40px;
-}
+
 .text-box p{
     margin: 10px  40px;
     font-size: 20px;
@@ -140,11 +142,11 @@ nav.fa{
 }
 @media(max-width: 700px){
     .text-box h1{
-        font-size: 15px;
+        font-size: 20px;
         padding-top: 60px;
     }
     .text-box p{
-        font-size: 12px;
+        font-size: 15px;
     }
     .nav-links ul li{
         display: block;
@@ -170,7 +172,7 @@ nav.fa{
         padding: 30px;
     }
     .kontakt-knap{
-        font-size: 12px;
+        font-size: 15px;
         padding: 6px 16px;
     }
 
@@ -180,18 +182,14 @@ body{
     background-color:#000000;
     width: auto;
 }
+
 .kompetancer{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 30px;
-    
+    padding-top: 30px;    
 }
-h1{
-    font-size: 36px;
-    font-weight: 600;
-    color: white;
-}
+
 .row{
     margin-top: 5%;
     display: flex;
@@ -202,10 +200,8 @@ h1{
     background: #3BB273;
     border-radius: 10px;
     margin-bottom: 5%;
-    padding: 20px 12px;
     box-sizing: border-box;
     transition: 0.5s;
-    color: white;
     text-align: justify;
     padding: 30px 20px;
     
@@ -215,7 +211,6 @@ h1{
     background: #222222;
     border-radius: 10px;
     margin-bottom: 5%;
-    padding: 20px 12px;
     box-sizing: border-box;
     transition: 0.5s;
     color: white;
@@ -226,6 +221,7 @@ h3{
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
+    color: white;
 }
 .komp-col:hover{
     box-shadow: 0 0 20px 0 rgba(0, 134, 0, 0.582);
@@ -239,19 +235,20 @@ h3{
     .row{
         flex-direction: column;
     }
-    .kompetancer{
-        font-size: 12px;
-    }
-    .kompetancer h1{
-        font-size: 15px;
-    }
     .komp-col-grøn{
         width: 250px;
-        margin-left: 145px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
     }
     .komp-col{
         width: 250px;
-        margin-left: 145px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+    .kompetancer h1{
+        font-size: 20px;
     }
 }
 /*------mig------*/
@@ -296,10 +293,7 @@ h3{
 .right-colum{
     flex: 1;
 }
-h1{
-    text-align: center;
-    width: 100%;
-}
+
 .læsmere-knap{
     display: inline-block;
     text-decoration: none;
@@ -319,42 +313,31 @@ h1{
     transition: 1s;
 }  
 @media(max-width: 700px){
-    .container{
-        flex-direction: column;
-        font-size: 15px;
-        
+    .container {
+      flex-direction: column; 
     }
-    .text-box2{
-        margin-left: 12px; 
-        align-content: center;
-        width: 300px;
-    }
-    .text-box2 h1{
-        font-size: 15px;
-    }
-    
-    .right-colum h1{
-        font-size: 15px;
+     .text-box2 {
+        width: 70%;
+        margin: auto;
     }
     .læsmere-knap{
         font-size: 15px;
         padding: 6px 16px;
-        margin-left: 20px;
-        margin-bottom: 30px;
-    }
-    .left-column{
-        width: 200px;
-        height: 400px;
-        object-fit: cover;
-        margin-left: 10px;
-        
-    }  
+        margin-left: 75px;
+        margin-bottom: 30px;  
+    } 
+    .mig h1{
+        font-size: 20px;
+    } 
 
 }
 
 /*------portfolio------*/
 .portfolio h1{
     margin-top: 30px;
+}
+.portfolio{
+    text-align: center;
 }
 .gallery{
     display: flex;
@@ -373,129 +356,61 @@ h1{
        
 }
 .rundt-hjørne{
-    border-radius: 450px 0 0 0;
+    border-radius: 0 450px 0 0;
     width: 200px;
     height: 300px;
     object-fit: cover;
     padding: 25px ;
 }
 .rundt-hjørne2{
-    border-radius: 0 0 450px 0;
+    border-radius: 0 0 0 450px ;
     width: 200px;
     height: 300px;
     object-fit: cover;
     padding: 25px ;
 }
-@media(max-width: 700px){
-    .container2{
-        padding-right: 55px;
-    }
-}
-
-/*------kontakt------*/
-
-.heroo{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(14, 14, 14);
-}
-.heroo h1{
-    padding-bottom: 15px;
-}
-.form{
-    width: 90%;
-    max-width: 600px;
-    
-
-}
-.input-group{
-    margin-bottom: 30px;
-    position: relative;
-    
-}
-input, textarea{
-    width: 100%;
-    padding: 10px;
-    outline: 0;
-    border: 1px solid white;
-    background: transparent;
-    font-size: 15px;
-    color: #fff;
-}
-label{
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding: 10px;
-    color: white;
-    cursor: text;
-    transition: 0.2s;
-}
-
-input:focus~label,
-input:valid~label,
-textarea:focus~label,
-textarea:valid~label{
-    top: -35px;
-    font-size: 14px;
-    
-}
-.row{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 55px;
-}
-.row .input-group{
-    flex-basis: 40%;
-}
-
-.send-knap{
+.se-mere-knap{
     display: inline-block;
     text-decoration: none;
     color: white;
-    border: 1px solid #fff;
     padding: 12px 34px;
     margin-left: 12px;
+    margin-top: 130px;
     font-size: 18px;
     background: transparent;
     align-items: center;
     position: relative;
     cursor: pointer
 }
-.send-knap:hover{
+.se-mere-knap:hover{
     border: 1px solid #ff3881;
     background: #ff3881;
     transition: 1s;
-}  
-@media(max-width: 700px){
+}
 
-    .contacts {
-        justify-content: center;
-        padding-left: 100px
+@media(max-width: 700px){
+    .container2{
+        padding-right: 55px;
     }
-    .contacts h1{
-        padding-left: 2px;
-        margin-left: -60px;
+    .portfolio h1{
         font-size: 20px;
     }
-    .row{
-        margin-right: 0px;
-        padding-right: 150px;
+
+    .rundt-hjørne{
+        border-radius: 0 0 0 0;
+
     }
-    .input-group{
-        width: 200px;
-        margin-left: 12px;
-    }
-    .send-knap{
-        margin-left: 12px;
-        font-size: 14px;
-    }
+    .rundt-hjørne2{
+        border-radius: 0 0 0 0 ;
+
+    
 }
+
+/*------kontakt------*/
+
+
+
+
 /*------footer------*/
 
 footer{
@@ -567,15 +482,15 @@ footer{
     .portfolio-container{
         display: flex;
         justify-content: center;
-        padding-left: 0px;
-        margin-right: 0px;
+        padding-left: 0;
+        margin-right: 0;
 
     }
     .portfolio-container2{
         display: flex;
         justify-content: center;
-        padding-left: 0px;
-        margin-right: 0px;
+        padding-left: 0;
+        margin-right: 0;
 
     }
     
@@ -600,14 +515,12 @@ footer{
     justify-content: center;
 
 }
-@media(max-width: 700px){
-
-    
+@media(max-width: 700px){    
     .text-box6{
         display: flex;
         justify-content: center;
         font-size: 14px;
-        padding: 0px 20px;
+        padding: 0 20px;
     }
 }
 
@@ -616,20 +529,19 @@ footer{
 .kontakt-container{
     display: flex;
     padding: 30px 120px;
-    margin-left: 110px;
+
 }
 .kontakt-info p{
     color: #3BB273;
 }
 .kontakt-tekst{
-
     text-align: left;
-    padding-top: 30px;
     justify-content: center; 
     margin-right: 20px;
-    padding-top: 95px;
-    padding-left: 90px;
+    padding-top: 50px;
+    padding-left: 0;
     grid-column: auto;
+    width: 80%;
 }
 .kontakt-info p{
     color: #3BB273;
@@ -639,13 +551,7 @@ footer{
     height: 100vh;
     display: flex;
     align-items: flex-start;
-    background-color: #000000;
-    
-}
-
-.kontakt-formular h1{
-    padding-bottom: 15px;
-    margin-left: 225px;
+    background-color: #000000;   
 }
 .form{
     width: 90%;
@@ -653,8 +559,10 @@ footer{
 
 }
 .input-group{
+    flex-basis: 40%;
     margin-bottom: 30px;
     position: relative;
+    margin-right: 60px;
     
 }
 input, textarea{
@@ -693,38 +601,53 @@ textarea:valid~label{
 }
 .row .input-group{
     flex-basis: 40%;
+    margin-right: 60px;
 }
+.send-knap{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    margin-left: 12px;
+    background: transparent;
+    align-items: center;
+    position: relative;
+    cursor: pointer
+}
+.send-knap:hover{
+    border: 1px solid #ff3881;
+    background: #ff3881;
+    transition: 1s;
+}  
 @media(max-width: 700px){
     .kontakt-container{
         flex-direction: column;
-        font-size: 14px;
+        font-size: 15px;
+        display: flex;
     }
     .kontakt-formular {
         justify-content: center;
-    }
-    .kontakt-formular h1{
-        padding-left: 2px;
-        margin-left: -60px;
-        font-size: 20px;
-    }
-    .row{
-        margin-right: 0px;
-        padding-right: 150px;
+    
     }
     .input-group{
         width: 200px;
-        margin-left: 12px;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .row .input-group{
+        flex-basis: 40%;
+        margin-right: auto;
+        margin-left: auto;
     }
     .kontakt-tekst{
-        width: 230px;
-        justify-content: left;
-        padding-left: 0px;
-        justify-self: left;
-        position: relative;
-        left: -180px;     
+        width: 100%;
+        position: relative; 
     }
     .send-knap{
         margin-left: 12px;
         font-size: 15px;
     }
+
 }
