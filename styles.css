@@ -338,6 +338,8 @@ h3{
 }
 .portfolio{
     text-align: center;
+    height: 100%;
+    width: 100%;
 }
 .gallery{
     display: flex;
@@ -402,10 +404,8 @@ h3{
     }
     .rundt-hjørne2{
         border-radius: 0 0 0 0 ;
-
-    
+    }
 }
-
 /*------kontakt------*/
 
 
@@ -416,7 +416,8 @@ h3{
 footer{
     background-color: #000000;
     height: 150px;
-    width: 100%;   
+    width: 100%;  
+     
 }
 .footer-container{
     justify-content: center;
@@ -482,38 +483,42 @@ footer{
     .portfolio-container{
         display: flex;
         justify-content: center;
-        padding-left: 0;
-        margin-right: 0;
+        padding-left: 0px;
+        margin-right: 0px;
 
     }
     .portfolio-container2{
         display: flex;
         justify-content: center;
-        padding-left: 0;
-        margin-right: 0;
+        padding-left: 0px;
+        margin-right: 0px;
 
     }
     
 }
 
 
+
 /*------om-mig-side------*/
 .om-mig-side{
     width: 100%;
+    height: 700px;
     display: flex;
     justify-content: center;
     margin: auto;
     text-align: center;
     padding-top: 30px;
     color: white;
+    background-color: rgb(14, 14, 14);
 
 }
 .text-box6{
     height: 400px;
     width: 600px;
-    display: flex;
     justify-content: center;
-
+}
+.text-box6 p{
+    margin-bottom: 40px;
 }
 @media(max-width: 700px){    
     .text-box6{
