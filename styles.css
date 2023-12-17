@@ -480,11 +480,35 @@ footer{
     width: 400px;
     height: 400px;
     object-fit: cover;
-    padding: 25px 50px ;
+    padding: 25px 50px;
+}
+.port-billede2{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    object-position: bottom;
+    padding: 25px 50px;
+}
+.port-billede3{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    object-position: top;
+    padding: 25px 50px;
 }
 @media(max-width: 700px){
 
     .port-billede{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+    .port-billede2{
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+    .port-billede3{
         width: 200px;
         height: 200px;
         object-fit: cover;
